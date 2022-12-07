@@ -1,3 +1,5 @@
+import java.security.Principal;
+import java.text.NumberFormat;
 import java.util.Scanner;
 
 public class Main {
@@ -23,7 +25,7 @@ public class Main {
 //            Increment operators
             int x = 1;
             x *= 2;
-            System.out.println(x);
+//            System.out.println(x);
 
 //            Order of Operation
 //        () Parenthesis
@@ -32,13 +34,36 @@ public class Main {
         int a = 12;
         int b = 10;
         int c = 20;
-        System.out.println(a + b / c);
+//        System.out.println(a + b / c);
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Age ");
-        byte ball = scanner.nextByte();
-        System.out.println("You are " + ball);
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Name ");
+//        String noun = scanner.nextLine().trim();
+//        System.out.println("You are " + noun);
 
 
+//        Mortgage Calculator
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Principal = ");
+//        NumberFormat principal = NumberFormat.getCurrencyInstance();
+//        scanner.nextLine().trim();
+//        System.out.print("Monthly Interest Rate = ");
+//        scanner.nextLine().trim();
+//        System.out.print("Number of Payment = ");
+//        scanner.nextLine().trim();
+//        System.out.print("Mortgage = ");
+//        scanner.nextLine().trim();
+
+        int p = 100000;
+        double r = 0.2;
+        int n = 180;
+        double topadd = 1+r;
+        double top = (Math.pow(topadd, n));
+        double top2 = r*top;
+
+        double down = top - 1;
+
+        double div = Math.ceil(top2/down);
+        System.out.println(div);
     }
 }
