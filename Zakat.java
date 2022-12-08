@@ -18,6 +18,8 @@ public class Zakat {
         System.out.print("Liabilities: ");
         int liabilities = scanner.nextInt();
 
-        System.out.println("Zakat = " + (savings + assets + cash - liabilities)/RATE);
+        double total = (savings + assets + cash - liabilities)/RATE;
+
+        System.out.println("Zakat = " + (total);
     }
 }
