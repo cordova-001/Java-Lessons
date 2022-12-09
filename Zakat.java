@@ -20,6 +20,6 @@ public class Zakat {
 
         double total = (savings + assets + cash - liabilities)/RATE;
 
-        System.out.println("Zakat = " + (total);
+        System.out.println("Zakat = " + (total));
     }
 }
