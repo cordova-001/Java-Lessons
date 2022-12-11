@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Zakat {
-    public static void main(String[], args){
+    public static void main(String[] args){
         final double RATE = 0.25;
 
         Scanner scanner = new Scanner(System.in);
@@ -18,6 +18,8 @@ public class Zakat {
         System.out.print("Liabilities: ");
         int liabilities = scanner.nextInt();
 
-        System.out.println("Zakat = " + (savings + assets + cash - liabilities)/RATE);
+        double total = (savings + assets + cash - liabilities)/RATE;
+
+        System.out.println("Zakat = " + (total));
     }
 }
