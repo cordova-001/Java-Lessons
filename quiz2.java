@@ -12,7 +12,7 @@ public class quiz2 {
         if(number % 3 == 0)
             System.out.print("buzz");
         if(number % 5 == 0)
-            System.out.print("Fizz");
+            System.out.print(" Fizz");
         else if(number % 5 != 0 && number % 3 != 0)
             System.out.print(number);
 
