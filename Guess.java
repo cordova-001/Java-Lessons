@@ -17,5 +17,8 @@ public class Guess{
             System.out.println("Your number is greater than the answer " + real_number);
         else if(answer==real_number)
             System.out.println("You are wonderful");
+
+//        using switch statement for this algorithm
+
     }
 }
